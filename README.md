@@ -2,7 +2,7 @@
 >
 > 21 | nl 
 > 
->  hi, i go by rowynn, but of course that's not my legal name x)
+>  hi, i go by rowynn!
 > 
 > 
 >  contact me at hello@rowynn.eu
