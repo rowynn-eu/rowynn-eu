@@ -1,10 +1,10 @@
 > ### rowynn.eu
 >
-> 21 | nl 
-> 
->  hi, i go by rowynn!
-> 
-> 
->  contact me at hello@rowynn.eu
+> In dark times, should the stars also go out?
 
-<!--- erm.. what the scallop --->
+⛤ 21+ | en/nl | hobbyist 💜 
+📧 hello@rowynn.eu
+
+<img src="https://cdn.imgchest.com/files/d7ogcmroloy.png" width="250" height=flex>
+
+<!--- erm.. what the scallop? --->
