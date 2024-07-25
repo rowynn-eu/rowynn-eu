@@ -6,6 +6,6 @@
 
 📧 hello@rowynn.eu
 
-<img src="https://cdn.imgchest.com/files/d7ogcmroloy.png" width="600" height=flex>
+<img src="https://cdn.imgchest.com/files/d7ogcmroloy.png" width="650" height=flex>
 
 <!--- erm.. what the scallop? --->
