@@ -1,5 +1,3 @@
-⛤ 21+ | nb | hobbyist 💜 <br>
-
 > # <b>[rowynn.eu](https://rowynn.eu)</b>
 >
 > In dark times, should the stars also go out?
