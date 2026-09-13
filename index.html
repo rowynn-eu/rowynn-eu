@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>at the end of everything, hold on to anything.</title>
+  </head>
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=swap");
+
+    :root {
+      color-scheme: light dark;
+
+      --blue: light-dark(#458588, #83a598);
+
+      --aqua: light-dark(#689d6a, #8ec07c);
+      --orange: light-dark(#d65d0e, #fe8019);
+      --gray: light-dark(#7c6f64, #a89984);
+
+      --bg-0: light-dark(#ebdbb2, #282828);
+      --bg-1: light-dark(#d5c4a1, #3c3836);
+      --bg-2: light-dark(#bdae93, #504945);
+      --fg-0: light-dark(#282828, #ebdbb2);
+      --fg-1: light-dark(#3c3836, #d5c4a1);
+      --fg-2: light-dark(#504945, #bdae93);
+    }
+
+    :root[data-theme="light"] {
+      color-scheme: light;
+    }
+
+    :root[data-theme="dark"] {
+      color-scheme: dark;
+    }
+    * {
+      transition: color 0.125s ease-in-out;
+      transition: background 0.125s ease-in-out;
+    }
+    body {
+      margin: 2em auto;
+      max-width: 90%;
+      line-height: 1.6;
+      font-size: 18px;
+      padding: 0 10px;
+      color: var(--fg-0);
+      background: var(--bg-0);
+      font-family: "Inconsolata", monospace;
+      font-optical-sizing: auto;
+      h1 {
+        color: var(--orange);
+      }
+      strong {
+        color: var(--gray);
+      }
+      a {
+        color: var(--blue);
+        text-decoration: double var(--blue);
+        &:hover {
+          color: var(--aqua);
+          transition: color 0.1s ease-in-out;
+        }
+      }
+      hr {
+        border: 1px solid var(--orange);
+      }
+      @media (min-width: 60rem) {
+        width: 60rem;
+      }
+      button {
+        display: block;
+        margin-left: auto;
+        text-decoration: none;
+        border: 1px solid var(--orange);
+        color: var(--orange);
+        background: none;
+        height: 2em;
+        width: 2em;
+        &:hover {
+          background: var(--fg-0);
+        }
+      }
+    }
+  </style>
+
+  <body>
+    <main>
+      <h1>Rowynn Sewkaransing</h1>
+      <hr />
+      <strong> they/them / die/diens / ri aŭ si</strong>
+      <p>queer web developer based in Amsterdam, the Netherlands.</p>
+      <p>
+        e-mail me at <a href="mailto:">hello@rowynn.eu</a> for general
+        inquiries.
+      </p>
+      <p>ook beschikbaar in het Nederlands.</p>
+      <p>...ankaŭ en Esperanto.</p>
+    </main>
+    <footer>
+      <nav>
+        <a href="https://fdnd.rowynn.eu">/fdnd</a>
+        <a href="https://github.com/rowynn-eu">/github</a>
+        <a href="https://www.linkedin.com/in/rowynn-eu/">/linkedin</a>
+        <a href="#resume">/cv</a>
+      </nav>
+    </footer>
+    <button id="theme-toggle">☀</button>
+  </body>
+  <script defer>
+    const root = document.documentElement;
+    const btn = document.getElementById("theme-toggle");
+
+    const saved = localStorage.getItem("theme");
+    if (saved) root.setAttribute("data-theme", saved);
+
+    btn.addEventListener("click", () => {
+      const current =
+        root.getAttribute("data-theme") ||
+        (matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+      const next = current === "dark" ? "light" : "dark";
+      root.setAttribute("data-theme", next);
+      localStorage.setItem("theme", next);
+    });
+  </script>
+</html>
