@@ -1,5 +1,5 @@
 # 📧 hello@rowynn.eu for general inquiries  
-i'm a (soon-to-be) creative front-end developer from Amsterdam, the Netherlands in a persistent battle against [shitty design](https://stopshittydesign.com) and contribute to open source projects whenever i have the time.
+hello! i'm a (soon-to-be) creative front-end developer from Amsterdam, the Netherlands in a persistent battle against [shitty design](https://stopshittydesign.com) and contribute to open source projects whenever i have the time.
 
 ## 🪻Projects
 🪪[Portfolio](https://rowynn.eu) - (WIP)  
